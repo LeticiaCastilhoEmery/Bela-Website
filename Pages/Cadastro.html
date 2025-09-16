@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações</title>
+
+    <link rel="stylesheet" href="Estilo.css">
+    
+</head>
+<body> 
+   
+    <header>
+        
+            <nav>
+
+            <h1>Princesa <span>linda</span> de mamãe</h1>
+
+            <ul>
+            <li> <a href="Rotina.html" title="Rotina" target="_blank">Rotina</a></li>
+            <li><a href="Nascimento.html" title="Nascimento" target="_blank">Nascimento</a></li>
+            <li><a href="Informações.html" title="Informações da Bebela" target="_blank">Informações</a></li>
+            <li><a href="Entrar.html" target="_blank">Entrar</a></li>
+            <li><a href="Cadastro.html" title="Cadastro" target="_blank">Cadastro</a></li>
+            <li><a href="bela.html">Comentários</a></li>
+            </ul>
+            </nav>
+    </header>
+    <main>
+            <h3 id="Cadastro">Cadastre-se</h3>
+
+            <form name="Cadastro" method="get" target="_blank">
+
+            <fieldset>
+            <legend><strong> Dados pessoais</strong></legend> <br>
+            <label for="Nome no cadastro">Nome de usuário</label> <br>
+            <input type="text" name="Nome" placeholder="Crie seu nome de usuário" id="Nome no cadastro"> <br><br>
+
+            <label for="Senha no cadastro">Senha</label> <br>
+            <input type="password" name="Senha" placeholder="Crie sua senha" id="Senha no cadastro"> <br><br>
+
+            Gênero <br>
+            <input type="radio" name="Gênero" value="Feminino" id="Feminino">
+            <label for="Feminino">Feminino</label>
+            <input type="radio" name="Gênero" value="Masculino" id="Masculino"> 
+            <label for="Masculino">Masculino</label> <br><br>
+
+            Qual a sua idade e data de nascimento? <br><br>
+            <label for="Idade">Idade</label><input type="number" min="0" max="100"> 
+            <label for="Data">Data</label><input type="date"> <br><br>
+
+            Qual a sua cidade?
+
+            <select>
+                <option value="">Selecione</option>
+                <option value="Re">Recife</option>
+                <option value="Ol">Olinda</option>
+                <option value="Ca">Camaragibe</option>
+                <option value="Al">Abreu e Lima</option>
+                <option value="Jg">Jaboatão dos Guararapes</option>
+                <option value="Ig">Igarassu</option>
+                <option value="It">Itapissuma</option>
+        
+            </select>
+
+            <br><br>
+
+            Faça upload da sua foto
+
+            <input type="file" name="arquivo">
+
+            </fieldset>
+
+            <fieldset>
+            <legend> <strong> Dados adicionais </strong></legend>             <br>
+
+            Valor do presente para Bela <br>
+
+            <input type="checkbox" name="Presente[]" value="5" id="5">
+            <label for="5">R$ 5,00</label>
+            <input type="checkbox" name="Presente[]" value="10" id="10">
+            <label for="10">R$ 10,00</label>
+            <input type="checkbox" name="Presente[]" value="15" id="15">
+            <label for="15">R$ 15,00</label>
+            <input type="checkbox" name="Presente[]" value="20" id="20">
+            <label for="20">R$ 20,00</label>
+
+            <br><br>
+            </fieldset>
+
+            <button type="submit">Cadastrar</button>
+
+            <br><br>
+
+            </form>
+    </main>
+</html>

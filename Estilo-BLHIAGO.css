@@ -1,0 +1,20 @@
+
+body {background-color: rgb(176, 121, 228);
+    font-family:Arial, Helvetica, sans-serif;
+        }
+
+table {border: 5px solid black}
+th {
+    background-color: blueviolet;
+    color: black;
+    border: 2px solid gray;
+}
+td {background-color: white;
+        color:black;
+     color: black;
+    border: 2px solid gray;}
+
+
+li {border: 1px solid black; background-color: white;}
+
+a {color: blue}

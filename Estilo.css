@@ -1,0 +1,612 @@
+
+@font-face { font-family: Pacifico ;
+  src: url("Pacifico-Regular.ttf");
+}
+
+@font-face { font-family: Emily ;
+  src: url("EmilysCandy-Regular.ttf");
+}
+
+body {font-family: 'Inter', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: none;
+  }
+
+
+
+
+header {background-color: hsl(255, 58%, 75%);
+        }
+
+header nav h1 {margin: 0;
+            white-space: nowrap;
+          font-size: 1.875rem; }
+
+#Menu {font-size: 1.875rem;
+      display: none;
+}
+
+header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.25rem;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            padding-bottom: 1.25rem;
+            background-color: #8266d6;
+            box-shadow: 0px 7px 7px -1px rgba(130,102,214,.5);
+            font-weight: bold;            
+        } 
+        
+header section {display: flex;
+            align-items: center;
+            gap: 6.25rem;
+            padding-top: 1.25rem;
+            padding-left: 1.25rem;
+            padding-right: 3.125rem;
+            padding-bottom: 1.25rem;
+                        }
+
+header figure {text-align: right;
+                object-position: 6250rem;}
+
+header figure img {border-radius: 3.125rem;}
+
+header h2 {text-align: center;
+          margin-left: 3.125rem;
+          margin-top: 6.25rem;
+          font-family: Emily;
+        font-size: 6.25rem;
+      }
+
+header nav ul {display: flex;
+            gap: 0.125rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 1.25rem;
+          }
+
+header li {display: inline-block; padding-inline: 0px; margin: 0}
+
+mark {background-color: aqua;}
+
+table {
+        /*border: 3px solid black;*/
+        box-shadow: 0.6250rem 0.625rem 1.25rem 0.313rem rgba(0,0,0,0.5);
+        border-spacing: 0.313rem;
+        border-collapse: collapse;
+        margin-bottom: 2rem;
+      }
+
+th {
+    background-color: blueviolet;
+    color: rgb(231, 189, 255);
+    padding: 0.625rem;
+    /*border-bottom: 3px solid black;*/
+}
+
+tr:nth-child(even) {background-color: plum}
+
+tr {/*color:black;*/
+    background-color: white;
+    padding: 0.625rem
+    }
+
+td {/*border: 3px solid gray;*/
+    padding: 0.625rem}
+
+    /*
+.left {border-left: 3px solid black}
+.right {border-right: 3px solid black}
+.bottomandright {border-bottom: 3px solid black; border-right: 3px solid black;}
+.leftandbottom {border-left: 3px solid black; border-bottom: 3px solid black}
+.bottom {border-bottom: 3px solid black}*/
+
+
+
+tr:hover td {background-color: gray;}
+
+li {color: black;
+  padding: 10px 15px;
+  }
+
+li::marker {color: rgb(0, 0, 0)}
+
+ul {list-style-type: "\2764";
+}
+
+#listaComentarios {list-style-type: "\2764";
+  width: 20rem
+
+}
+
+#listaComentarios li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+#listaComentarios button {
+  border: none;
+  width: 100px;
+  height: 50px;
+  padding: 0;
+  background-color: #8266d6;
+  margin-bottom: 0;
+   border: 0;
+   box-shadow: none;
+}
+
+ol {list-style-type: none}
+
+
+
+a {color: rgb(231, 189, 255);
+  text-decoration: none;
+  padding: 10px 15px}
+
+a:hover {color: white}
+
+span {color: rgb(231, 189, 255);}
+
+fieldset {border-radius: 10px;}
+
+aside {text-align: center;}
+
+footer {text-align: left;
+        background-color: #8266d6;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+#Entrar {text-align: center;}
+
+/*imagens/WhatsApp Image 2025-07-17 at 22.03.36.jpeg"*/
+
+#homepage {display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          height: 35rem;
+              padding-left: 50px;
+              padding-right: 50px;
+          background-image: url(Imagens/WhatsApp\ Image\ 2025-07-17\ at\ 22.03.36.jpeg);
+          background-size: cover;
+          background-attachment: fixed;
+          background-repeat: none;
+            position: relative; 
+            z-index: -1;
+
+          }
+
+#homepage::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.4);
+      z-index: 1; 
+    }
+
+
+
+#homepage div {display: block;
+              width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+              position: relative; 
+              z-index: 2;
+              
+}
+
+#homepage div p {font-size: 2rem}
+#homepage h3 { text-align: center;
+              font-size: 3rem;
+              }
+
+
+
+#homepage {background-color: #8266d6;
+              margin: 0px;
+              }
+
+
+#homepage figure { margin: 0px;
+             
+            }
+
+#homepage figure figcaption {padding-left: 200px;
+                              padding-bottom: 50px;}
+
+#homepage figure img {border-radius: 100px;
+                  margin: 50px;
+                margin-bottom: 10px;}
+
+
+aside {background-color: hsl(255, 58%, 75%);
+}
+
+aside h2 {margin: 0px;
+  padding-top: 25px;
+  
+}
+
+aside textarea {font-family: Inter;
+                width: 400px;
+              margin: 15px;
+            border-radius: 10px;}
+
+aside button {width: 100px;
+              height: 50px;
+              border-radius: 30px;
+              background-color: #8266d6;
+              font-family: inter;
+              margin-bottom: 25px;
+              font-weight: bold;
+              font-size: 15px;
+              border: 0;
+              box-shadow: 2px 2px 2px 2px black; 
+    }
+
+/*#Rotina {background-color: hsl(255, 58%, 75%) ;}*/
+
+#rotinaBody {background-image: url(Imagens/Imagem\ do\ WhatsApp\ de\ 2025-09-12\ à\(s\)\ 00.55.25_0287bdaf.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+
+#rotinaBody header nav h1 a {
+  margin: 0;
+  padding: 0;
+}
+
+#Rotina div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#Rotina aside {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  padding: 40px;
+}
+
+#Rotina aside h4 {
+  color: hsl(255, 58%, 75%);
+        font-size: 2rem;
+        text-shadow: 2px 4px 8px black, 0 1px 0 #fff;
+}
+
+#Rotina aside li {
+  color: black;
+  text-shadow: 2px 4px 8px rgb(231, 189, 255), 0 1px 0 #fff;
+  font-size: 2rem;
+}
+
+#Rotina h1 {margin-top: 0px;
+            padding-top: 50px;
+          text-align: center;
+        color: hsl(255, 58%, 75%);
+        font-size: 5rem;
+        text-shadow: 2px 4px 8px black, 0 1px 0 #fff;
+    }
+
+#Rotina ol {font-size: 50px;
+            }
+
+#Rotina li {color: black;
+  text-shadow: 2px 4px 8px rgb(231, 189, 255), 0 1px 0 #fff;
+            }
+
+#rotinaBody {
+  font-weight: bold;
+}
+
+#nascimentoBody article h1 {
+        margin-top: 0px;
+        padding-top: 50px;
+        text-align: center;
+        color: hsl(255, 58%, 75%);
+        font-size: 5rem;
+        text-shadow: 2px 4px 8px black, 0 1px 0 #fff;
+    }
+
+#nascimentoBody article p {
+  text-align: center;
+            font-size: 3rem;
+            width: 30rem;
+}
+
+#nascimentoBody article p a {
+  padding-left: 0.313rem;
+  padding-right: 0.313rem;
+  padding-top: 0;
+padding-bottom: 0;
+}
+
+#nascimentoBody {
+  background-image: url(Imagens/Imagem\ do\ WhatsApp\ de\ 2025-09-12\ à\(s\)\ 23.16.56_5d1521b0.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 500px;
+}
+
+#nascimentoBody header nav h1 a {
+  margin: 0;
+  padding: 0;
+}
+
+#nascimentoBody article div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10rem;
+            margin-bottom: 5rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
+}
+
+#nascimentoBody footer {
+          margin-top: auto;
+}
+
+#infoBody header nav h1 a {
+  margin: 0;
+  padding: 0;
+}
+
+#infoBody {
+  background-color: hsl(255, 58%, 75%);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+#infoBody main,
+#infoBody article {
+  margin-bottom: 0;
+}
+
+#infoBody footer {
+  margin-top: auto;
+  justify-self: flex-end;
+}
+#infoBody main {
+  flex: 1 0 auto;
+  min-height: 0;
+}
+
+#infoBody article h1{
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  text-align: center;
+}
+
+#infoBody table {
+  justify-self: center;
+}
+
+.tabela-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  min-width: 700px; 
+}
+
+@media screen and (max-width: 1096px){
+
+  nav {position: relative;
+    }
+
+  header nav ul {display: none;
+            gap: 2px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+          }
+
+  #Menu {font-size: 1.875rem;
+      display: flex;
+      justify-self: end;
+      background: rgba(130,102,214,0.98);
+      border: none;
+      z-index: 1100;
+      
+}
+
+#sidebar-menu {
+        position: absolute;
+        top: 4.75rem;
+        right: 0px;
+        left: auto;
+        width: 200px;
+        height: 50%;
+        background: rgba(130,102,214,0.98);
+        box-shadow: -2px 4px 16px rgba(0,0,0,0.2);
+    transition: right 0.3s;
+        display: none;
+        z-index: 1050;
+    }
+    #sidebar-menu.open {
+        display: block;
+    }
+
+   #sidebar-menu li {
+    display: block;
+    color: rgb(231, 189, 255);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-align: left;
+    border-radius: 0;
+    background: rgba(130,102,214,0.98);;
+    transition: 0.2s, color 0.2s;
+  }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    header section {display: flex;
+        flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1.25rem;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            padding-bottom: 1.25rem;
+                        }
+
+    header section h2 {text-align: center;
+        margin-left: 0;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          font-family: Emily;
+        font-size: 6.25rem;
+      }
+
+    header figure img {
+        border-radius: 3.125rem;
+        width: 400px;
+        height: 50%;
+          }
+
+    #nascimentoBody article div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+}
+
+.tabela-scroll {
+    width: 100%;
+    overflow-x: auto;
+  }
+  table {
+    min-width: 600px; /* mantém o tamanho da tabela */
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 550px){
+
+header nav h1 span {
+  display: none;
+}
+
+header nav h1 {
+  font-size: 1.5rem;
+}
+
+#Menu {font-size: 1.5rem;
+      display: flex;
+      justify-self: end;
+      background: rgba(130,102,214,0.98);
+      border: none;
+      z-index: 1100;
+      
+}
+
+#homepage div p {font-size: 1.5rem}
+#homepage h3 { text-align: center;
+              font-size: 2.5rem;
+              }
+
+#nascimentoBody article h1 {
+        margin-top: 0px;
+        padding-top: 50px;
+        text-align: center;
+        color: hsl(255, 58%, 75%);
+        font-size: 3rem;
+        text-shadow: 2px 4px 8px black, 0 1px 0 #fff;
+    }
+
+#nascimentoBody article p {
+  text-align: center;
+            font-size: 1.5rem;
+            width: 30rem;
+}
+
+table {
+        /*border: 3px solid black;*/
+        box-shadow: 0.6250rem 0.625rem 1.25rem 0.313rem rgba(0,0,0,0.5);
+        border-spacing: 0.313rem;
+        border-collapse: collapse;
+        width: 18.75rem;
+      }
+
+th {
+    background-color: blueviolet;
+    color: rgb(231, 189, 255);
+    padding: 0.625rem;
+    /*border-bottom: 3px solid black;*/
+}
+
+tr:nth-child(even) {background-color: plum}
+
+tr {/*color:black;*/
+    background-color: white;
+    padding: 0.625rem
+    }
+
+td {/*border: 3px solid gray;*/
+    padding: 0.625rem}
+
+    /*
+.left {border-left: 3px solid black}
+.right {border-right: 3px solid black}
+.bottomandright {border-bottom: 3px solid black; border-right: 3px solid black;}
+.leftandbottom {border-left: 3px solid black; border-bottom: 3px solid black}
+.bottom {border-bottom: 3px solid black}*/
+
+
+
+tr:hover td {background-color: gray;}
+}
+
+#comentarioInput {
+  width: 20rem;
+}
+
+header section img {
+  width: 275px;
+}
+
+
+@media screen and (max-width: 620px){
+
+#nascimentoBody article div video {
+  width: 400px;
+}
+}
+
+@media screen and (max-width: 650px){
+#Rotina div {
+  display: flex;
+  flex-direction: column;
+}
+
+#listaComentarios {list-style-type: "\2764";
+  width: 20rem;
+  justify-self: center;
+}
+}

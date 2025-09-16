@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bela</title>
+
+    <link rel="stylesheet" href="Estilo.css">
+   
+</head>
+<body>
+    <!--Surpresaaa-->
+    <header>
+        
+            <nav>
+
+            <h1>Princesa <span>linda</span> de mamãe</h1>
+
+            <button id="Menu"><span>Menu</span></button>
+
+            <ul id="sidebar-menu">
+            <li> <a href="Pages/Rotina.html" title="Rotina" target="_blank">Rotina</a></li>
+            <li><a href="Pages/Nascimento.html" title="Nascimento" target="_blank">Nascimento</a></li>
+            <li><a href="Pages/Informações.html" title="Informações da Bebela" target="_blank">Informações</a></li>
+            <!--<li><a href="Pages/Entrar.html" target="_blank">Entrar</a></li>
+            <li><a href="Pages/Cadastro.html" title="Cadastro" target="_blank">Cadastro</a></li>-->
+            <li><a href="#Comentários">Comentários</a></li>
+            </ul> 
+            </nav>
+
+        <section>
+        <h2>Anabela Castilho do Emery</h2>
+        <figure>
+        <img src="Imagens/WhatsApp Image 2025-07-05 at 15.15.00.jpeg"
+             alt="Foto da Bebela"
+             width="300"
+             title="Belela">
+        <!--<figcaption>Anabela</figcaption>-->
+        </figure>
+        </section>
+    </header>
+    
+    <main>
+       
+    <!--Essa foto abaixo só aparece se clicar no documento. O live server não abre ele.-->
+        <article id="homepage">
+            <!--<figure>
+            <img src="imagens/WhatsApp Image 2025-07-17 at 22.03.36.jpeg"
+                alt="Foto da Família no estilo do Studio Guibli"
+                width="500"
+                title="Família">
+            <figcaption><b>Mamãe, papai e Bebela</b></figcaption>
+            </figure>-->
+
+ 
+            <div>
+            
+                <h3>Aqui você pode conhecer mais sobre a Bebelinha</h3>
+
+                <p><i>Princesa</i> linda demais, perfeita <b>aos olhos do pai,</b>. <br>
+                Alguém igual a você não vi <strong>jamais.</strong> <br>
+                Você é uma <u>obra prima</u> que Deus planejou. Com suas próprias mãos pintou. <br>
+                <del>Faz só muito cocô</del></p>
+            
+            </div>
+
+        </article>
+        <aside>
+            <h2 id="Comentários">Comentários</h2>
+
+            <form name="Comentários" method="get" target="_blank">
+
+            <textarea id="comentarioInput" name="Comentário" placeholder="Digite uma mensagem para a gatinha e coloque seu nome"></textarea> <br>
+            <button id="enviarComentario">Enviar</button>
+            <ul id="listaComentarios"></ul>
+
+            </form>
+
+        </aside>
+</main>
+
+<footer>
+Pernambuco, Brasil. Que Deus nos abençoe!
+</footer>
+<script>
+document.getElementById('Menu').addEventListener('click', function() {
+    document.getElementById('sidebar-menu').classList.toggle('open');
+});
+
+function mostrarComentarios() {
+  const lista = document.getElementById('listaComentarios');
+  lista.innerHTML = '';
+  const comentarios = JSON.parse(localStorage.getItem('comentarios') || '[]');
+  comentarios.forEach(function(texto, idx) {
+    const li = document.createElement('li');
+    li.textContent = texto;
+
+    // Botão apagar
+    const btn = document.createElement('button');
+    btn.style.marginLeft = '0';
+    btn.style.background = 'none';
+    btn.style.border = 'none';
+    btn.style.cursor = 'pointer';
+
+    const img = document.createElement('img');
+    img.src = 'imagens/lixeira.png'; // URL de uma lixeira
+    img.alt = 'Apagar';
+    img.width = 24;
+    img.height = 24;
+
+    btn.appendChild(img);
+    btn.onclick = function() {
+      comentarios.splice(idx, 1);
+      localStorage.setItem('comentarios', JSON.stringify(comentarios));
+      mostrarComentarios();
+    };
+
+    li.appendChild(btn);
+    lista.appendChild(li);
+  });
+}
+
+document.getElementById('enviarComentario').addEventListener('click', function() {
+  const texto = document.getElementById('comentarioInput').value.trim();
+  if (texto) {
+    const comentarios = JSON.parse(localStorage.getItem('comentarios') || '[]');
+    comentarios.push(texto);
+    localStorage.setItem('comentarios', JSON.stringify(comentarios));
+    document.getElementById('comentarioInput').value = '';
+    mostrarComentarios();
+  }
+});
+
+mostrarComentarios();
+</script>
+</body>
+</html>
+
